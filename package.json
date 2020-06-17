@@ -1,0 +1,33 @@
+{
+  "name": "salesforce-app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Salesforce App",
+  "scripts": {
+    "build": "webpack --config ./build-config/webpack.config.js",
+    "lint": "npm run lint:lwc",
+    "lint:lwc": "eslint force-app/main/default/lwc",
+    "test": "npm run test:unit",
+    "test:unit": "sfdx-lwc-jest",
+    "test:unit:watch": "sfdx-lwc-jest --watch",
+    "test:unit:debug": "sfdx-lwc-jest --debug",
+    "test:unit:coverage": "sfdx-lwc-jest --coverage",
+    "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
+    "prettier:verify": "prettier --list-different \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\""
+  },
+  "devDependencies": {
+    "@prettier/plugin-xml": "^0.7.2",
+    "@salesforce/eslint-config-lwc": "^0.5.0",
+    "@salesforce/sfdx-lwc-jest": "^0.7.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.2",
+    "eslint": "^6.8.0",
+    "prettier": "^2.0.5",
+    "prettier-plugin-apex": "^1.4.0",
+    "sfdx-deploy-webpack-plugin": "^1.1.1",
+    "static-resource-webpack-plugin": "^1.0.1",
+    "visualforce-template-webpack-plugin": "0.0.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

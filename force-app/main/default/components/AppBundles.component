@@ -1,0 +1,9 @@
+<apex:component>
+    <!-- webpack css file(s) emitted here -->
+    <!--% styles %-->
+    <!--% styles %-->
+    <div id="root"/>
+    <!-- webpack js file(s) emitted here -->
+    <!--% scripts %-->
+    <!--% scripts %-->
+</apex:component>
